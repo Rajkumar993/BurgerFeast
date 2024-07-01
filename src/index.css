@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  
+ @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+
+*{
+  font-family: "Poppins", sans-serif;
+}
+body{
+  overflow-x: hidden;
+}
+.slick-dots li button:before {
+  font-size: 12px;
+  width: 25px;
+  height: 2px;
+  content: '';
+  color: rgb(161, 161, 161); /* Change this to your desired color */
+  opacity: 1;
+  background-color: gray;
+}
+
+/* Change the color of the active dot */
+.slick-dots li.slick-active button:before {
+  color: rgb(255, 255, 255); /* Change this to your desired color */
+  opacity: 1;
+  background-color: rgb(255, 255, 255);
+}
+
+@layer base {
+   .btn{
+     background-color: rgb(231, 153, 6);
+     padding: 2px 10px;
+     border-radius: 10px;
+     color:white ;
+     font-weight: 600;
+  } 
+}
+@layer utilities {
+.backgroundImage{
+  background-image: url('./Food_Assets/assets/parallax/bg.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  }
+}
+::-webkit-scrollbar{
+  display: none;
+}
+@layer utilities {
+  .backgroundImage2{
+    background-image: url('./Food_Assets/assets/blog/reviews.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    }
+  }
+  @layer utilities {
+    .backgroundImage3{
+      background-image: url('./Food_Assets/assets/footer/banner-1.jpg');
+      background-size: cover;
+      background-position: top;
+      
+      }
+    }
+    @layer utilities {
+      .backgroundImage4{
+        background-image: url('./Food_Assets/assets/hero/hero-1.jpg');
+        background-size: cover;
+        background-position: top;
+        
+        }
+      }
+      @layer utilities {
+        .AboutPng{
+          background-image: url('./Food_Assets/assets/about/about-1.jpg');
+          background-size: cover;
+          background-position: top;
+          
+          }
+        }
+        @layer utilities {
+          .Ad1{
+            background-image: url('./Food_Assets/assets/menu/ads-1.jpg');
+            background-size: cover;
+            background-position: top;
+            
+            }
+          }
+          @layer utilities {
+            .Ad2{
+              background-image: url('./Food_Assets/assets/menu/ads-2.jpg');
+              background-size: cover;
+              background-position: top;
+              
+              }
+            }
+      
+  
