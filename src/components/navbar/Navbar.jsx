@@ -150,7 +150,7 @@ const ShowRef =useRef(null)
             <li onClick={ScrollBlog}>Blog</li>
             <li  onClick={ScrollContact}>Contact</li>
             </ul>}
-        { nav &&  <div className='flex z-40 py-2 items-center md:justify-between   text-white fixed bg-[#f1cb20] top-0 left-0 right-0 px-4   md:px-32 '>
+        { nav &&  <div className='flex z-40 py-2 items-center md:justify-between overflow-hidden   text-white fixed bg-[#f1cb20] top-0 left-0 right-0    md:px-32 '>
         <div className="logo cursor-pointer mr-3 md:mr-0 ">
         <img className=' w-[100px] md:w-32'  src={Logo} alt="" />
         </div>
