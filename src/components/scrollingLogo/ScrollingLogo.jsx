@@ -25,7 +25,7 @@ let value = 0 ;
  
   return (
     <>
-    <div ref={Ref} className='w-[400vw] overflowY-hidden  items-center bg-[white]] py-14  transform transition-all duration-500  flex'>
+    <div ref={Ref} className='w-[400vw] overflowY-hidden  items-center bg-[white]] py-14 hidden transform transition-all duration-500  md:flex'>
       <div className='flex justify-center gap-2  w-[100vw]'>
         <img className='md:w-32 w-14 ' src={Brand1Img} alt="" />
         <img className='md:w-32 w-14' src={Brand2Img} alt="" />

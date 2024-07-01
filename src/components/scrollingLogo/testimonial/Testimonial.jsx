@@ -44,8 +44,8 @@ export const Testimonial = () => {
   };
 
   return (
-    <div className="md:backgroundImage2 bg-black py-10 md:py-0   flex  items-center justify-center  text-white md:h-[50vh]  ">
-      <div  className='w-[500px] '>
+    <div className="md:backgroundImage2 bg-black py-10 md:py-0  hidden   md:flex  items-center justify-center  text-white md:h-[50vh]  ">
+      <div  className='w-[500px] overflowX-hidden '>
       <Slider {...settings}>
       {data.map(item=>(<div className='flex  justify-center mb-10  items-center' key={item.id}>
       <div  className='mb-4 flex  justify-center  '>

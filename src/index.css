@@ -6,9 +6,10 @@
 
 *{
   font-family: "Poppins", sans-serif;
+
 }
 body{
-  overflow-x: hidden;
+  overflow-x: hidden; 
 }
 .slick-dots li button:before {
   font-size: 12px;

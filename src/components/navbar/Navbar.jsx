@@ -79,7 +79,7 @@ const ShowRef =useRef(null)
      }
     return (
             <>
-        <div className='flex  py-2 relative items-center text-white justify-between px-4 md:px-32 '>
+        <div className='flex  py-2 relative items-center overflow-hidden text-white justify-between px-4 md:px-32 '>
             <div className="logo w-32 cursor-pointer ">
             <img  src={Logo} alt="" />
             </div>
@@ -101,7 +101,7 @@ const ShowRef =useRef(null)
         </div>
         </div>
         
-        <div ref={SideBar} className='fixed transition-all overflow-hidden duration-500 text-black md:overflow-auto z-50 bg-white w-full translate-x-[900px]  md:w-96 flex flex-col md:translate-x-96 right-0 top-0 bottom-0'>
+        <div ref={SideBar} className='fixed transition-all duration-500 text-black md:overflow-auto z-50 bg-white w-full translate-x-[900px]  md:w-96 flex flex-col md:translate-x-96 right-0 top-0 bottom-0'>
         <div className='md:flex md:justify-end md:px-3 py-2'> 
            <p onClick={CloseSideBar} className='text-center text-4xl cursor-pointer'><IoIosCloseCircleOutline className='text-black' /></p>
         </div>
@@ -143,18 +143,18 @@ const ShowRef =useRef(null)
         </div>
         </div>
         </div>
-       {showMenu &&  <ul  className='bg-white py-4 transition-all duration-700 flex justify-around md:hidden '>
+       {showMenu &&  <ul  className='bg-white py-4  transition-all duration-700 flex justify-around md:hidden '>
         <li onClick={ScrolltoTop}>Home</li> 
           <li onClick={ScrollAbout}>About</li>
             <li onClick={ScrollShop}>Shop</li>
             <li onClick={ScrollBlog}>Blog</li>
             <li  onClick={ScrollContact}>Contact</li>
             </ul>}
-        { nav &&  <div className='flex z-40 py-2 items-center md:justify-between overflow-hidden   text-white fixed bg-[#f1cb20] top-0 left-0 right-0    md:px-32 '>
+        { nav &&  <div className='flex z-40 py-2 top-0 items-center md:justify-between overflow-hidden   text-white fixed bg-[#f1cb20] md:top-0 md:left-0 md:right-0     md:px-32 '>
         <div className="logo cursor-pointer mr-3 md:mr-0 ">
         <img className=' w-[100px] md:w-32'  src={Logo} alt="" />
         </div>
-        <div className="navi">
+        <div className="navi overflow-hidden">
         <ul className='flex md:gap-3 gap-1  items-center cursor-pointer'>
          <li className='text-sm' onClick={ScrolltoTop}>Home</li>
         <li className='text-sm' onClick={ScrollAbout}>About</li> 
