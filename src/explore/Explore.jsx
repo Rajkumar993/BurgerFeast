@@ -5,7 +5,7 @@ import Salad from '../Food_Assets/assets/about/salad.png'
 export const Explore = ({ScrollTOAbt}) => {
   return (
    <>
-   <div  className=' AboutPng bg-cover h-h-50 bg-center'>
+   <div  className=' AboutPng  h-h-50 '>
       <div ref={ScrollTOAbt} className='flex  flex-col justify-center gap-8 mt-5 py-4 md:py-0 md:mt-0 md:gap-5 items-center'>
         <h1 className='md:text-3xl font-bold text-center'>The Burger Taste Better When <br/>
              You Eat It With Your Family</h1>
