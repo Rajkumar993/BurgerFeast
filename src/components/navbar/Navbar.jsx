@@ -116,11 +116,11 @@ const ShowRef =useRef(null)
             <p className='text-smm md:text-md'>{item.newItem.title}</p>
           </div>
           </div>
-          <div>
+          <div className='flex'>
             <p>$ {(item.newItem.price*item.qty).toFixed(2)} </p>
           </div>
-          <div className='flex items-center gap-2 justify-center'>
-            <p>Qty :</p>
+          <div className='flex items-center md:gap-2 justify-center'>
+            <p>Qty : </p>
            <div className='flex border border-black'> 
             <button onClick={()=>AddQty(item.newItem.id)} className='px-2'>+</button>
            <input  type="text" value={item.qty} readOnly className='border-l text-center border-black border-r w-10' />
@@ -150,12 +150,12 @@ const ShowRef =useRef(null)
             <li onClick={ScrollBlog}>Blog</li>
             <li  onClick={ScrollContact}>Contact</li>
             </ul>}
-        { nav &&  <div className='flex z-40 py-2 top-0 items-center md:justify-between overflow-hidden   text-white fixed bg-[#f1cb20] md:top-0 md:left-0 md:right-0     md:px-32 '>
+        { nav &&  <div className='flex z-40 py-3 top-0 items-center md:justify-between  overflow-hidden mx-auto  text-white fixed bg-[#f1cb20] md:top-0 md:left-0 md:right-0     md:px-32 '>
         <div className="logo cursor-pointer mr-3 md:mr-0 ">
-        <img className=' w-[100px] md:w-32'  src={Logo} alt="" />
+        <img className=' w-[70px] md:w-32'  src={Logo} alt="" />
         </div>
         <div className="navi overflow-hidden">
-        <ul className='flex md:gap-3 gap-1  items-center cursor-pointer'>
+        <ul className='flex md:gap-3 gap-2.5  items-center cursor-pointer'>
          <li className='text-sm' onClick={ScrolltoTop}>Home</li>
         <li className='text-sm' onClick={ScrollAbout}>About</li> 
 
@@ -164,7 +164,7 @@ const ShowRef =useRef(null)
         <li className='text-sm' onClick={ScrollContact}>Contact</li>
         <li className='text-sm relative' onClick={ShowSideBar} >
         <TiShoppingCart  className='md:text-4xl text-2xl ' />
-        <p className='absolute top-0 right-0 bg-red-600 md:font-bold w-4 h-4 md:text-sm text-smm flex justify-center items-center md:w-5 md:h-5 line rounded-full'>{cart.length}</p>
+        <p className='absolute top-0 right-0 bg-red-600 md:font-bold w-3 h-3 md:text-sm text-smm flex justify-center items-center md:w-5 md:h-5 line rounded-full'>{cart.length}</p>
         </li>
         
         </ul>
