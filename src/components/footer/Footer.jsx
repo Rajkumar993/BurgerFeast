@@ -5,8 +5,9 @@ import { FaInstagram } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 export const Footer = ({ScrollTOContact}) => {
   return (
-    <div ref={ScrollTOContact} className='flex py-4 md:py-0 items-center justify-center'>
-    <div className='md:flex md:flex-row  flex flex-col gap-3 w-full ' >
+    <>
+    <div ref={ScrollTOContact} className='flex py-4 md:py-0 items-center justify-center '>
+    <div className='md:flex md:flex-row  flex flex-col gap-3 w-full py-4 ' >
     <div className='md:w-1/4 flex justify-center items-center'>
       <ul className='flex text-center md:gap-2 flex-col'>
         <li className='font-bold'>Location</li>
@@ -39,5 +40,9 @@ export const Footer = ({ScrollTOContact}) => {
     </div>
     </div>
     </div>
+    <div className='flex border-t py-2 justify-center'>	
+   <p className='font-bold text-smm md:text-sm'> &#169; CopyRights 2024 Rajkumar.All Rights Reserved</p>
+    </div>
+    </>
   )
 }
