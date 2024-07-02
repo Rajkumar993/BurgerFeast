@@ -101,7 +101,7 @@ const ShowRef =useRef(null)
         </div>
         </div>
         
-        <div ref={SideBar} className='fixed transition-all duration-500 text-black md:overflow-auto z-50 bg-white w-full translate-x-[900px]  md:w-96 flex flex-col md:translate-x-96 right-0 top-0 bottom-0'>
+        <div ref={SideBar} className='fixed transition-all duration-500 text-black overflow-auto md:overflow-auto z-50 bg-white w-full translate-x-[900px]  md:w-96 flex flex-col md:translate-x-96 right-0 top-0 bottom-0'>
         <div className='md:flex md:justify-end md:px-3 py-2'> 
            <p onClick={CloseSideBar} className='text-center text-4xl cursor-pointer'><IoIosCloseCircleOutline className='text-black' /></p>
         </div>
